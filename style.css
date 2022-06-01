@@ -66,6 +66,7 @@ header button, #contact form button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 #about, #discord, #contact, footer {
@@ -133,6 +134,7 @@ background: #cefeff;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
  }
 
  input, textarea {
@@ -164,4 +166,66 @@ margin-bottom: 32px;
 footer div a {
     padding: 0 16px;
     font-size: 24px;
+}
+
+/* Small phones, Tablets, large smartphones */
+
+@media only screen and (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    header h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .header-description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div button {
+        max-width: 240px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section_description {
+        flex-direction: column;
+
+    }
+    .section_description div {
+        width: 100%;
+    }
+    #about figure, #discord figure {
+        width: 100%;
+    }
+
+    #discord .section_description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+    footer img {
+        max-width: 360px;
+    }
+    footer div a {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    footer div {
+        margin-bottom: 24px;
+    }
+
 }
